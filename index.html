@@ -36,23 +36,22 @@
     <div class="project">
       <strong>Simple Calculator (C)</strong>
       <p>A basic calculator performing add, subtract, multiply, divide.</p>
-
+      
+      <!-- C Code Display Block -->
       <pre style="background: #e9ecef; padding: 10px; border-radius: 4px; overflow-x: auto;"><code>
-        
-    #include</stdio.h>
-    int main() 
-  {
+#include <stdio.h>
+
+int main() {
     char Operator; 
     int NUMBER1, NUMBER2;
-  
+
     printf("Enter an operator (+, -, *, /): ");
     scanf(" %c", &Operator); 
-  
+
     printf("Enter two operands: ");
-    scanf("%f %f", &NUMBER1, &NUMBER2);
-  
-    switch (Operator) 
-  {
+    scanf("%d %d", &NUMBER1, &NUMBER2);
+
+    switch (Operator) {
         case '+':
             printf("%d + %d = %d\n", NUMBER1, NUMBER2, NUMBER1 + NUMBER2);
             break;
@@ -64,24 +63,22 @@
             break;
         case '/':
             if (NUMBER2 != 0) {
-                printf("%d/ %d = %d\n", NUMBER1, NUMBER2, NUMBER1 / NUMBER2);
-            } 
-        else 
-            {
+                printf("%d / %d = %d\n", NUMBER1, NUMBER2, NUMBER1 / NUMBER2);
+            } else {
                 printf("Error: Division by zero is not allowed.\n");
             }
             break;
         default:
             printf("Error! The operator you entered is not valid.\n");
-             }
-    
-        return 0;
-           }
-        
+    }
+    return 0;
+}
       </code></pre>
+      
+      <!-- This is the single, working link pointing to the file inside the 'projects' folder -->
       <a href="https://github.com/anshikacodes56/anshikacodes56.github.io/blob/main/projects/Simple_Calculator.c" target="_blank">View on GitHub</a>
     </div>
-
+    
     <div class="project">
       <strong>2D Array Sum (C)</strong>
       <p>Program to input and display a 2D matrix and calculate sum.</p>
