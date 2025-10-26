@@ -36,6 +36,40 @@
     <div class="project">
       <strong>Simple Calculator (C)</strong>
       <p>A basic calculator performing add, subtract, multiply, divide.</p>
+
+      <pre style="background: #e9ecef; padding: 10px; border-radius: 4px; overflow-x: auto;"><code>
+#include <stdio.h>
+
+int main() {
+    char operator;
+    double NUMBER1, NUMBER2;
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &operator);
+
+    printf("Enter two operands: ");
+    scanf("%lf %lf", &NUMBER, &NUMBER2);
+
+    switch (operator) 
+  {
+        case '+':
+            printf("%.1lf + %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 + NUMBER2);
+            break;
+        case '-':
+            printf("%.1lf - %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 - NUMBER2);
+            break;
+        case '*':
+            printf("%.1lf * %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 * NUMBER2);
+            break;
+        case '/':
+            printf("%.1lf / %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 / NUMBER2);
+            break;
+        default:
+            printf("Error! operator is not correct");
+    }
+    return 0;
+}
+      </code></pre>
       <a href="https://github.com/anshikacodes56/C_Language_Projects/tree/main/Simple_Calculator" target="_blank">View on GitHub</a>
     </div>
 
