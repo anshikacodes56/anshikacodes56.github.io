@@ -38,39 +38,48 @@
       <p>A basic calculator performing add, subtract, multiply, divide.</p>
 
       <pre style="background: #e9ecef; padding: 10px; border-radius: 4px; overflow-x: auto;"><code>
-#include <stdio.h>
-
-int main() {
-    char operator;
-    double NUMBER1, NUMBER2;
-
+        
+    #include</stdio.h>
+    int main() 
+  {
+    char Operator; 
+    int NUMBER1, NUMBER2;
+  
     printf("Enter an operator (+, -, *, /): ");
-    scanf("%c", &operator);
-
+    scanf(" %c", &Operator); 
+  
     printf("Enter two operands: ");
-    scanf("%lf %lf", &NUMBER, &NUMBER2);
-
-    switch (operator) 
+    scanf("%f %f", &NUMBER1, &NUMBER2);
+  
+    switch (Operator) 
   {
         case '+':
-            printf("%.1lf + %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 + NUMBER2);
+            printf("%d + %d = %d\n", NUMBER1, NUMBER2, NUMBER1 + NUMBER2);
             break;
         case '-':
-            printf("%.1lf - %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 - NUMBER2);
+            printf("%d - %d = %d\n", NUMBER1, NUMBER2, NUMBER1 - NUMBER2);
             break;
         case '*':
-            printf("%.1lf * %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 * NUMBER2);
+            printf("%d * %d = %d\n", NUMBER1, NUMBER2, NUMBER1 * NUMBER2);
             break;
         case '/':
-            printf("%.1lf / %.1lf = %.1lf", NUMBER1, NUMBER2, NUMBER1 / NUMBER2);
+            if (NUMBER2 != 0) {
+                printf("%d/ %d = %d\n", NUMBER1, NUMBER2, NUMBER1 / NUMBER2);
+            } 
+        else 
+            {
+                printf("Error: Division by zero is not allowed.\n");
+            }
             break;
         default:
-            printf("Error! operator is not correct");
-    }
-    return 0;
-}
+            printf("Error! The operator you entered is not valid.\n");
+             }
+    
+        return 0;
+           }
+        
       </code></pre>
-      <a href="https://github.com/anshikacodes56/C_Language_Projects/tree/main/Simple_Calculator" target="_blank">View on GitHub</a>
+      <a href="https://github.com/anshikacodes56/anshikacodes56.github.io/blob/main/projects/Simple_Calculator.c" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project">
